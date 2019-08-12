@@ -1,1 +1,1 @@
-This is a simple skeleton to create a simple calculator object in python. Fill out the methods in the calculator.py file. Answers can be found in answers.py.
+This is a simple skeleton to create a simple calculator object in python. Fill out the methods in the calculator.py file. Test your answers by running pytest on a command line from this folder. Answers can be found in answers.py.
