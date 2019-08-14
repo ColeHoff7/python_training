@@ -74,4 +74,43 @@ class StringTutorial():
         This function returns the combination (concatenation) of strings a and b
         """
         pass
+
+    def count_characters(self, s, c):
+        """
+        This function returns the number of times character c appears in string s
+        """
+        pass
+
+    def get_range(self, s, a, b):
+        """
+        This function returns the substring of s from indices a->b
+        Example:
+          s = 'hello there'
+          a = 3
+          b = 5
+          return 'lo'
+        """
+        pass
+
+    def is_palindrome(self, s):
+        """
+        This function returns True if string s is a palindrome, and returns False if it is not
+        """
+        pass
+    
+    def replace(self, s, a, b):
+        """
+        This function replaces all instances of substring a with substring b in string s
+        """
+        pass
+    
+    def capitalize(self, s):
+        """
+        This function capitalizes the first letter in every word in string s
+        Example:
+            s = 'this is a string, it's pretty cool'
+            return 'This Is A String, It's Pretty Cool'
+        """
+        pass
+
     

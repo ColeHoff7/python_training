@@ -76,3 +76,46 @@ def test_zip_list_2():
     n = l.zip_list(a,b)
     assert n == [1,4,2,5,3,6,9,10]
 
+# Tests for Dicts
+
+# Tests for Strings
+s = StringTutorial()
+
+def test_combine_string():
+    assert s.combine_strings('abc','cba') == 'abccba'
+
+def test_count_characters():
+    assert s.count_characters('aabbbbbaccccccaaa','a') == 6
+
+def test_count_characters():
+    assert s.count_characters('','a') == 0
+
+def test_get_range():
+    assert s.get_range('abcdefg', 3, 6) == 'def'
+
+def test_is_palindrome_true_odd():
+    assert s.is_palindrome('racecar') == True
+
+def test_is_palindrome_true_even():
+    assert s.is_palindrome('raccar') == True
+
+def test_is_palindrome_false():
+    assert s.is_palindrome('asdfb') == False
+
+def test_replace():
+    assert s.replace('i love dogs', 'dogs', 'cats') == 'i love cats'
+
+def test_replace():
+    assert s.replace('my name is cole, cole is my name', 'cole', 'kevin') == 'my name is kevin, kevin is my name'
+
+def test_capitalize():
+    assert s.capitalize('this is a string, it\'s pretty cool') == 'This Is A String, It\'s Pretty Cool'
+
+def test_capitalize_2():
+    assert s.capitalize('   this is a string, it\'s pretty cool   ') == '   This Is A String, It\'s Pretty Cool   '
+
+def test_capitalize_empty():
+    assert s.capitalize('') == ''
+
+def test_capitalize_already_capital():
+    assert s.capitalize('This Is A String, It\'s Pretty Cool') == 'This Is A String, It\'s Pretty Cool'
