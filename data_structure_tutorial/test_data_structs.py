@@ -77,6 +77,20 @@ def test_zip_list_2():
     assert n == [1,4,2,5,3,6,9,10]
 
 # Tests for Dicts
+d = DictionaryTutorial()
+
+def test_add_item_dict():
+    assert d.add_item({'a': 'b', 'c': 'd'}, 'e', 'f') == {'a': 'b', 'c': 'd', 'e': 'f'}
+
+def test_remove_item_dict():
+    assert d.remove_item({'a': 'b', 'c': 'd', 'e': 'f'}, 'e') == {'a': 'b', 'c': 'd'}
+
+def test_dog_dict():
+    assert d.dog_dict(['John owns Fido', 'Bill owns Rover', 'Woof belongs to Man']) == {'John': 'Fido', 'Bill': 'Rover', 'Man': 'Woof'}
+
+def test_biography():
+    people = [{'first_name': 'John', 'last_name': 'Smith', 'age': 101, 'occupation': 'Blacksmith', 'children': ['Joe', 'Jill']},{'first_name': 'Elliot','last_name': 'Brosef','age': 15,'occupation': 'Student','children': []}]
+    assert d.create_biography(people) == ['John Smith, 101, is a Blacksmith with 2 children: Joe, Jill', 'Elliot Brosef, 15, is a Student with 0 children']
 
 # Tests for Strings
 s = StringTutorial()

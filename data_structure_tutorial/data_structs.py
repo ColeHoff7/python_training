@@ -61,9 +61,54 @@ class ListTutorial():
     
 class DictionaryTutorial():
 
-    def add_item(self, dict, key, value):
+    def add_item(self, d, key, value):
         """
-        This function adds an item {key: value} to dictionary dict
+        This function adds an item {key: value} to dictionary dict and returns the new dictionary
+        """
+        pass
+    
+    def remove_item(self, d, key):
+        """
+        This function removes an item from a dictionary and returns the new dictionary
+        """
+        pass
+    
+    def dog_dict(self, dogs):
+        """
+        Given a list of strings defining dog ownership that looks like:
+        ['John owns Fido', 'Bill owns Rover', 'Woof belongs to Man']
+        (you can expect both formats, {human} owns {dog} and {dog} belongs to {human})
+        Return a dictionary of {owners: dogs}
+        so for the list above the dictionary would be:
+        {
+            'John': 'Fido',
+            'Bill': 'Rover',
+            'Man': 'Woof'
+        }
+        """
+        pass
+
+    def create_biography(self, people):
+        """
+        Given a list of people described by the following dictionary format:
+        [{
+            first_name: 'John',
+            last_name: 'Smith',
+            age: 101,
+            occupation: 'Blacksmith',
+            children: ['Joe', 'Jill']
+        },
+        {
+            first_name: 'Elliot',
+            last_name: 'Brosef',
+            age: 15,
+            occupation: 'Student',
+            children: []
+        }]
+
+        Return a list of biographies comprised of their information. The biography for John and Elliot would be:
+        ['John Smith, 101, is a Blacksmith with 2 children: Joe and Jill', 'Elliot Brosef, 15, is a Student with 0 children']
+        This is an odd problem, but is similar to stuff you'll have to do with data sets
         """
         pass
     
